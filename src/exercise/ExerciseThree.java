@@ -1,6 +1,6 @@
 package exercise;
 
-import java.util.Arrays;
+// import java.util.Arrays;
 import java.util.Scanner;
 
 public class ExerciseThree {
@@ -20,8 +20,7 @@ public class ExerciseThree {
       if(text.equals(":q")) break;
 
       String[] arr = text.split("");
-      text = Arrays.toString(arr);
-      System.out.println(text.substring(1, text.length()-1));  
+      System.out.println(String.join(",", arr));  
     }
 
     System.out.println("Addio!");
